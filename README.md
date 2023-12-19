@@ -1,2 +1,2 @@
 # Modified-Guinea-Pig
-Modified guinea-pig code to give bunch density and field strength output
+Modified guinea-pig code to give bunch density and field strength output (in field.txt)
