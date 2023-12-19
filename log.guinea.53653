@@ -1,0 +1,35 @@
+make[1]: Entering directory `/nfs/home2/baonguye/guinea-pig/src'
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  besselCPP.cc -c -o besselCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  beamParametersCPP.cc -c -o beamParametersCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  beamCPP.cc -c -o beamCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  backgroundCPP.cc -c -o backgroundCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  pairsCPP.cc -c -o pairsCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  minijetsCPP.cc -c -o minijetsCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  mathematicalTools.cc -c -o mathematicalTools.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  lumiCPP.cc -c -o lumiCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  jetParameterCPP.cc -c -o jetParameterCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  guineapigCPP.cc -c -o guineapigCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  grvCPP.cc -c -o grvCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  gridCPP.cc -c -o gridCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  fourierCPP.cc -c -o fourierCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  fieldCPP.cc -c -o fieldCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  bhabhaSamplesCPP.cc -c -o bhabhaSamplesCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  timerCPP.cc -c -o timerCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  switchesCPP.cc -c -o switchesCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  splineCPP.cc -c -o splineCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  rndmCPP.cc -c -o rndmCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  resultsCPP.cc -c -o resultsCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  principal.cc -c -o principal.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  physicalTools.cc -c -o physicalTools.o
+physicalTools.cc: In static member function ‘static float PHYSTOOLS::synrad_no_spin_flip(float, float, float, std::vector<float>&, RNDM&)’:
+physicalTools.cc:82:16: warning: unused variable ‘mean_upsilon_test’ [-Wunused-variable]
+   static float mean_upsilon_test = 0.0;
+                ^
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  particlesCPP.cc -c -o particlesCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  particleBeamCPP.cc -c -o particleBeamCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  readData.cc -c -o readData.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  memory.cc -c -o memory.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  tridentCPP.cc -c -o tridentCPP.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b  option_args.cc -c -o option_args.o
+g++ -DUSE_NON_CONST -DUSE_FFT_LOCAL  -O3 -ffast-math -fno-keep-inline-functions -Wall -Wundef -fPIC -m64 -DCOMPUTER64b besselCPP.o beamParametersCPP.o beamCPP.o backgroundCPP.o pairsCPP.o minijetsCPP.o mathematicalTools.o lumiCPP.o jetParameterCPP.o guineapigCPP.o grvCPP.o gridCPP.o fourierCPP.o fieldCPP.o bhabhaSamplesCPP.o timerCPP.o switchesCPP.o splineCPP.o rndmCPP.o resultsCPP.o principal.o physicalTools.o particlesCPP.o particleBeamCPP.o readData.o memory.o tridentCPP.o option_args.o   -o guinea
+make[1]: Leaving directory `/nfs/home2/baonguye/guinea-pig/src'

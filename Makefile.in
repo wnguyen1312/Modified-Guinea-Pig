@@ -1,0 +1,27 @@
+# GUINEA-PIG Makefile
+
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+libdir = @libdir@
+
+all: @make_all@
+
+guinea_nofftw:
+	$(MAKE) -C src guinea_nofftw 2>&1 | tee log.guinea-nofftw.$$$$
+
+guinea:
+	$(MAKE) -C src guinea 2>&1 | tee log.guinea.$$$$
+
+guinearoot: 
+	$(MAKE) -C src guinearoot 2>&1 | tee log.guinea-root.$$$$
+
+install: all
+	test -d $(bindir) || mkdir -p $(bindir)
+	cd src && cp @make_all@ $(bindir) && cd ..
+clean: 
+	rm -f log.*
+	$(MAKE) -C src clean
+
+distclean: clean
+	rm -f config.log config.status Makefile src/Makefile src/config.h src/stamp-h

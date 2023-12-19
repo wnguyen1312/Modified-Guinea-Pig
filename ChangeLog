@@ -1,0 +1,50 @@
+18-01-2022 Andrea Latina <andrea.latina@cern.ch>
+	* Merged merge request "Bugfix for bhabha_rotations" by Valentin Volkl
+	* Merged merge request "Add beamslice variables for timing I/O" by Valentin Volkl
+	* configure package version set to 1.2.2
+ 02-09-2013 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix intialisation of members
+	* remove using namespace std in headers
+	* add Doxygen file
+16-12-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* small fixes
+	* add cmake files
+01-12-2011 Barbara Dalena <Barbara.Dalena@cern.ch>
+	* configure package version set to 1.2.0
+	* luminosity calculation at each step added 
+	* default store_pairs=0  
+01-12-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* timerCPP.h/cc: fixes
+	* LesDefines.h: cleanup
+	* timer.h: delete
+25-11-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* configure.ac: improve check on 64 bit
+23-11-2011 Barbara Dalena <barbara.dalena@cern.ch>
+	* fixed version number to 1.2.0
+	* added names of contributors in header
+03-11-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* use english consistently
+27-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix compiler warnings
+26-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix small mistake in assignment operator
+21-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix assignment operators
+20-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix compiler warnings
+19-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* remove version.h
+	* fix configure.ac for mac 64-bit
+17-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* backgroundCPP.h: fix memory leaks
+	* small fixes
+11-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* particleBeamCPP: fix Coverity bugs 34580 (missing break statement), 34602, 34603
+	* some cleanup
+10-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fileInputOutputAscii.h: remove circular dependency
+10-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* physicalTools.cc: fix bug in Lorentz force
+07-10-2011 Jochem Snuverink <Jochem.Snuverink@cern.ch>
+	* fix gcc warnings
+	* create ChangeLog

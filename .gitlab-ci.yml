@@ -1,0 +1,29 @@
+build-all:
+  variables:
+    SETUP: "/cvmfs/sw.hsf.org/key4hep/setup.sh"
+  script:
+  - if [[ -z ${LCG} ]]; then source ${SETUP}; else source /cvmfs/sft.cern.ch/lcg/views/dev4/latest/x86_64-centos7-${LCG}-opt/setup.sh; fi
+  - pip install gcovr
+  - export PATH=/root/.local/bin:$PATH
+  - mkdir build; cd build;
+  - cmake .. -DGUINEA_USE_EDM4HEP=${EDM4HEP} -D CMAKE_BUILD_TYPE=${BUILD_TYPE} -D DO_COVERAGE=ON
+  - make -j `getconf _NPROCESSORS_ONLN`
+  - ctest --output-on-failure --no-compress-output  --test-output-size-failed 1024000 --output-junit junit.xml
+  - gcovr --xml-pretty --exclude-unreachable-branches --print-summary -o coverage.xml --root ${CI_PROJECT_DIR}
+  parallel:
+    matrix:
+      - EDM4HEP: "OFF"
+        BUILD_TYPE: ["Release", "Debug"]
+        LCG: "gcc11"
+      - EDM4HEP: "OFF"
+        BUILD_TYPE: ["Release", "Debug"]
+        LCG: "clang12"
+      - EDM4HEP: ["ON", "OFF"]
+        BUILD_TYPE: ["Release", "Debug"]
+  coverage: /^\s*lines:\s*\d+.\d+\%/
+  artifacts:
+    reports:
+      junit: build/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: build/coverage.xml
