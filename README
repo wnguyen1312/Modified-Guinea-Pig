@@ -1,0 +1,32 @@
+--------------------------------------------------
+       GUINEA-PIG Installation
+--------------------------------------------------
+
+to compile without FFTW Libraries
+
+ ./configure -prefix=$YOUR_INSTALL_DIR
+
+ make
+
+ make install
+
+
+to compile with FFTW Libraries version 2.X.X
+
+ ./configure -prefix=$YOUR_INSTALL_DIR -enable-fftw2 -with-fftwdir=$YOUR_FFTW_HOME
+
+ make 
+ 
+ make install
+
+to compile with FFTW Libraries version 3.X.X
+
+ ./configure -prefix=$YOUR_INSTALL_DIR -enable-fftw3 -with-fftwdir=$YOUR_FFTW_HOME
+
+ make 
+ 
+ make install
+
+
+The "guinea" executable will be in the $YOUR_INSTALL_DIR/bin directory.
+
